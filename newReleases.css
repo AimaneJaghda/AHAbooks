@@ -1,0 +1,22 @@
+a{
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.bookContainer{
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    color: #0f0f0f;
+    transition: all 350ms ease-in-out;
+    outline: 2px solid #b9b9b976;
+}
+.bookContainer:hover{
+    box-shadow: 0 1rem 3rem #ea9571d3 !important;
+    transform: scale(1.06);
+}
+.bookContainer img{
+    border-radius: 20px;
+}
+.bookContainer .imgContainer{
+    border-right: 2px solid #a7a7a756;
+}

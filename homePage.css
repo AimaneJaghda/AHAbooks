@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* slideshow */
+.slideshow {
+    aspect-ratio: 16 / 6.7;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: all 1100ms ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 6.7;
+    object-fit: cover;
+}
+
+/* manual navigation */
+.navigation-manual {
+    position: absolute;
+    width: 100%;
+    margin-top: -7%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #f0f0f0;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 16 / 6.7;
+    object-fit: cover;
+    background-image: linear-gradient(0deg, #EA9571, #f0f0f000);
+}
+
+.title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 14%;
+    text-shadow: 0px 2px 22px rgba(15, 15, 15, 0.79);
+}
+
+
+
+
+
+
+/* random category book  */
+.bookContainer {
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    color: #0f0f0f;
+    transition: all 350ms ease-in-out;
+    outline: 2px solid #b9b9b976;
+}
+
+.bookContainer:hover {
+    box-shadow: 0 1rem 3rem #ea9571d3 !important;
+    transform: scale(1.06);
+}
+
+.bookContainer img {
+    border-radius: 20px;
+}
+
+.bookContainer .imgContainer {
+    border-right: 2px solid #a7a7a756;
+}
+
+
+.snap-scroll {
+    scroll-snap-type: inline mandatory;
+}
+
+.snap-scroll>* {
+    scroll-snap-align: start;
+}
+
+
+.categoryBody {
+    width: 100%;
+    height: 200px;
+    color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+.categoryBody:hover {
+    box-shadow: 0 1rem 3rem #ea9571ee !important;
+    outline: 2px solid #EA9571;
+    outline-offset: 7px;
+}
+
+.categoryBody1 {
+    background-image: url(Images/Fantasy.jpg);
+}
+
+.categoryBody2 {
+    background-image: url(Images/History.jpg);
+}
+
+.categoryBody3 {
+    background-image: url(Images/Fiction.jpg);
+}
+
+.typeCate {
+    background-color: #ea957100;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.categoryBody:hover .typeCate {
+    background-color: #ea9571b0;
+    transform: scale(1.2);
+}

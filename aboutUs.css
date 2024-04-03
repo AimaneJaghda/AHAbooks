@@ -1,0 +1,7 @@
+.picturContainer img{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.picturContainer{
+    background-color: #e0cec6d0;
+}

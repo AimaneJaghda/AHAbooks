@@ -1,0 +1,31 @@
+.searchContainer a{
+    color: #0f0f0f;
+    text-decoration: none;
+    transition: all 100ms linear;
+}
+.searchContainer a:hover{
+    color: #0f0f0fa1;
+    text-decoration: underline;
+}
+
+
+
+.searchContainer{
+    border-radius: 30px;
+    overflow: hidden;
+    border: 3px solid #e0cec6d0;
+    background-color: #e7e4e3d0;
+}
+.bookContainer{
+    border-bottom: 3px solid #e0cec6d0;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    .searchContainer, h1{
+        width: 80%;
+        margin: auto;
+    }
+}

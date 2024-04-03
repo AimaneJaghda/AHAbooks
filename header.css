@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding-top: 107.2px;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #EA9571;
+    background-color: white;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #bf7556;
+}
+::selection{
+    background-color: #EA9571;
+}
+
+
+/* header */
+
+.mar-0{
+    margin: 0;
+}
+.blackColor{
+    color: #323031;
+}
+.searchInput{
+    display: inline-block;
+}
+.searchIcon{
+    display: none;
+}
+.nav-item * {
+    margin: 0;
+}
+.form-control:focus{
+    border-color: #EA9571;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(234, 149, 113, 0.25);
+}
+.nav-elements > a{
+    color: #323031;
+    transition: all 150ms linear;
+}
+.nav-elements:hover > a{
+    color: #EA9571;
+    opacity: 1;
+}
+.categories{
+    border: 0px;
+    color: #323031;
+    transition: all 150ms linear;
+}
+.categories:hover{
+    color: #EA9571;
+}
+.category{
+    transition: all 150ms linear;
+}
+.category:hover{
+    color: #EA9571;
+}
+.profil{
+    border: 2px solid #EA9571;
+    transition: all 150ms linear;
+}
+.profil:hover{
+    box-shadow: 0 0 0 0.25rem #EA9571;
+    outline: 2px solid #EA9571;
+    outline-offset: 10px;
+}
+.cart{
+    border: 2px solid #EA9571;
+    transition: all 150ms linear;
+}
+.cart:hover{
+    box-shadow: 0 0 0 0.25rem #EA9571;
+    outline: 2px solid #EA9571;
+    outline-offset: 10px;
+}
+#blackOv{
+    background-color: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0.6;
+    z-index: 0;
+    display: none;
+    transition: all 200ms linear;
+}
+.profilePic{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.profil a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profil img{
+    max-width: 48px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+.profil{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+#categoriesDrop{
+    position: absolute;
+    top: 72px;
+    height: 10px;
+    overflow: auto;
+}
+
+.picH{
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    #navbar{
+        align-items: baseline;
+    }
+    #categoriesDrop{
+        height: 10px;
+        overflow: auto;
+        position: static;
+        top: 0px;
+    }
+    .nav-elements{
+        border-bottom: 1px solid #3230312d;
+        width: 100%;
+    }
+    .profil{
+        width: 56px;
+        height: 56px;
+        padding: 4px;
+    }
+}

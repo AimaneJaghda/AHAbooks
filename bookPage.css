@@ -1,0 +1,66 @@
+body{
+    background-color: #f0f0f0;
+}
+a{
+    color: #0f0f0f;
+    text-decoration: none;
+}
+.imgContainer{
+    background-color: #e0cec6d0;
+    padding: 20px;
+}
+.imgContainer img{
+    border-radius: 20px;
+}
+.bookContainer{
+    border-radius: 50px;
+    overflow: hidden;
+}
+.informationConatiner{
+    padding: 20px 40px;
+    background-color: #e7e4e3d0;
+}
+.informationConatiner h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.categoryBook{
+    padding: 12px 20px;
+    background-color: #f0f0f0;
+    transition: all 300ms ease-in-out;
+}
+.categoryBook:hover{
+    color: #f0f0f0;
+    background-color: #EA9571;
+    box-shadow: 0 1rem 3rem #ea9571ee !important;
+}
+
+.may-5{
+    margin-top: 40px;
+}
+
+.may-5 a{
+    transition: all 100ms linear;
+}
+.may-5 a:hover{
+    color: #0f0f0fa1;
+    text-decoration: underline;
+}
+
+.msg{
+    width: 50%;
+    min-width: 480px;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    animation: fadeUp 800ms ease-in-out ;
+}
+
+@keyframes fadeUp {
+    0% {transform: translate(-50%, 200px); opacity: 0;}
+    100% {transform: translate(-50%, -30px); opacity: 1;}
+}
